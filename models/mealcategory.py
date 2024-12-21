@@ -15,4 +15,6 @@ class MealCategory:
             self._id = id
         else:
             raise ValueError("ID must be an integer")
-
+    @property
+    def name(self):
+        return self._name

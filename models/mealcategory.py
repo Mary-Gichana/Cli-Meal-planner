@@ -24,5 +24,6 @@ class MealCategory:
             self._name = new_name
         else:
             raise ValueError("Name must be a string")
-        
-    
+    def __repr__(self):
+        return f"MealCategory({self._id}, {self._name})"
+

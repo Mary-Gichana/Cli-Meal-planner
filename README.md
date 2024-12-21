@@ -13,3 +13,10 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
 - Categorize meals by meal types (e.g., Breakfast, Lunch, Dinner)
 - Search functionality to find specific meals and meal categories
 - User-friendly CLI interface
+
+## How to Use
+
+### Requirements
+
+- A computer with Python 3.8+ installed
+- Basic understanding of how to use a terminal or command line

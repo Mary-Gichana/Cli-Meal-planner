@@ -39,6 +39,8 @@ class Meal:
             self._date = new_date
         else:
             raise ValueError("Date must be in the format YYYY-MM-DD")
+    def __repr__(self):
+        return f"Meal({self._id}, {self._name}, {self._date}, {self.mealcategory_id})"
     
 
 

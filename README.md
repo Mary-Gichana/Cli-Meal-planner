@@ -31,15 +31,25 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
 
 2.  Navigate to the project directory:
 
+    ```
     cd Cli-MealPlanner
 
+    ```
+
 3.  Install the required dependencies:
+
+    ```
     pipenv install then
     pipenv shell
 
+    ```
+
 4.  run the application
 
+    ```
     python cli.py
+
+    ```
 
 5.  Choose from the main menu
     When the application starts, you’ll see the main menu:

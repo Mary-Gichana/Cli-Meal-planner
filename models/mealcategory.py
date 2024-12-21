@@ -9,3 +9,10 @@ class MealCategory:
     @property
     def id(self):
         return self._id
+    @id.setter
+    def id(self, id):
+        if isinstance(id, int):
+            self._id = id
+        else:
+            raise ValueError("ID must be an integer")
+

@@ -42,3 +42,13 @@ class MealCategory:
                 cursor.execute('DELETE FROM mealcategory WHERE name = ?', (name,))
                 conn.commit()
 
+    @classmethod
+    def find_all(cls):
+        
+            with sqlite3.connect(DATABASE_NAME) as conn:
+                cursor = conn.cursor()
+                cursor.execute('SELECT * FROM mealcategory')
+                categories = cursor.fetchall()
+                return categories
+        
+

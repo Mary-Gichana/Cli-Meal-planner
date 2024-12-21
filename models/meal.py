@@ -51,6 +51,13 @@ class Meal:
                     (name, date, mealcategory_id)
                 )
                 conn.commit()
+    @classmethod
+    def delete_meal(cls, meal_id):
+        
+            with sqlite3.connect(DATABASE_NAME) as conn:
+                cursor = conn.cursor()
+                cursor.execute('DELETE FROM meals WHERE id = ?', (meal_id,))
+                conn.commit()
     
 
 

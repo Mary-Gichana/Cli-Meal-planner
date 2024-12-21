@@ -120,4 +120,5 @@ def main():
         elif choice == "3":
             print("Exiting Meal Planner. Goodbye!")
             sys.exit()
-        
+        else:
+            print("Invalid choice.")

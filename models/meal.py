@@ -32,6 +32,14 @@ class Meal:
     @property
     def date(self):
         return self._date
+    @date.setter
+    def date(self, new_date):
+        if isinstance(new_date, str):
+            datetime.strptime(new_date, "%Y-%m-%d")
+            self._date = new_date
+        else:
+            raise ValueError("Date must be in the format YYYY-MM-DD")
+    
 
 
     

@@ -60,25 +60,44 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
         2. Manage Meals - to manage meals.
         3. Exit - to exit the program.
 
-    If you select Manage Categories, the following options are displayed:
+    If you select Manage Categories, the following input options are displayed:
 
     ==== Manage Meal Categories ====
 
-        1. Add Category - Input the category name to create a new meal category.
-        2. Delete Category - Enter the name of the category to delete it from the list.
-        3. List Categories - Displays all meal categories along with their IDs.
-        4. Find Category by ID - Enter an ID to retrieve the details of the specific meal category.
-        5. Go Back - Returns to the main menu.
+        1. Add Category
+        2. Delete Category
+        3. List Categories
+        4. Find Category by ID
+        5. Go Back
+
+    Manage Meal Categories Menu
+
+    1.Add Category:Enter the name of the category to create a new meal category.
+    2.Delete Category:Enter the name of the category you want to delete from the list.
+    3.List Categories:View all existing meal categories along with their IDs.
+    4.Find Category by ID:Enter a specific ID to retrieve the details of the corresponding meal category.
+    5.Go Back:Return to the main menu.
 
     If you select Manage Meals, the following options are displayed:
 
     ==== Manage Meals ====
 
-        1. Add Meal - Input details such as the meal name, date, and category ID to add a new meal.
-        2. Delete Meal - Enter the name of the meal to remove it from the list.
-        3. List Meals - Displays all meals along with their IDs, names, and categories.
-        4. Find Meal by ID - Enter an ID to retrieve the details of a specific meal.
-        5. Go Back -  Returns to the main menu.
+        1. Add Meal
+        2. Delete Meal
+        3. List Meals
+        4. Find Meal by ID
+        5. Go Back
+
+    Manage Meals Menu
+
+    1.Add Meal:Enter the meal's name, date (in YYYY-MM-DD format), and category ID to add a new meal.
+    2.Delete Meal:Enter the name of the meal you want to remove from the list.
+    3.List Meals:View all existing meals, including their IDs, names, dates, and associated categories.
+    4.Find Meal by ID:Enter a specific ID to retrieve the details of the corresponding meal.
+    5.Go Back:Return to the main menu .
+
+    If you select Exit
+    You will exit the program.
 
 ## Technologies Used
 

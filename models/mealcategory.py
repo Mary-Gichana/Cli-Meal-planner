@@ -24,3 +24,5 @@ class MealCategory:
             self._name = new_name
         else:
             raise ValueError("Name must be a string")
+        
+    

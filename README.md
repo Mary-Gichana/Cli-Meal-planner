@@ -46,6 +46,7 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
    - Enter 2 to manage meals.
    - Enter 3 to exit the program.
      If you select Manage Categories, the following options are displayed:
+
      ==== Manage Meal Categories ====
 
    1. Add Category
@@ -54,7 +55,7 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
    4. Find Category by ID
    5. Go Back
 
-   - Input Options
+   ### - Input Options
 
    1. Add Category:
       Input the category name to create a new meal category.
@@ -68,6 +69,7 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
       Returns to the main menu.
 
    If you select Manage Meals, the following options are displayed:
+
    ==== Manage Meals ====
 
    1. Add Meal

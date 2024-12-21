@@ -58,6 +58,15 @@ class Meal:
                 cursor = conn.cursor()
                 cursor.execute('DELETE FROM meals WHERE id = ?', (meal_id,))
                 conn.commit()
+
+    @classmethod
+    def find_all(cls):
+
+            with sqlite3.connect(DATABASE_NAME) as conn:
+                cursor = conn.cursor()
+                cursor.execute('SELECT * FROM meals')
+                meals = cursor.fetchall()
+                return meals
     
 
 

@@ -41,6 +41,16 @@ class Meal:
             raise ValueError("Date must be in the format YYYY-MM-DD")
     def __repr__(self):
         return f"Meal({self._id}, {self._name}, {self._date}, {self.mealcategory_id})"
+    @classmethod
+    def add_meal(cls, name, date, mealcategory_id):
+        
+            with sqlite3.connect(DATABASE_NAME) as conn:
+                cursor = conn.cursor()
+                cursor.execute(
+                    'INSERT INTO meals (name, date, mealcategory_id) VALUES (?, ?, ?)',
+                    (name, date, mealcategory_id)
+                )
+                conn.commit()
     
 
 

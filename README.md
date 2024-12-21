@@ -24,9 +24,9 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
 ### Installation Process
 
 1. Clone this repository using:
-   - git clone git@github.com:Mary-Gichana/Cli-Mealplanner.git
+   - git clone git@github.com:Mary-Gichana/Cli-Meal-planner.git
 2. Navigate to the project directory:
-   cd Cli-Mealplanner
+   cd Cli-MealPlanner
 3. Install the required dependencies:
    - pipenv install
    - pipenv shell
@@ -88,3 +88,9 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
       Enter an ID to retrieve the details of a specific meal.
    5. Go Back:
       Returns to the main menu.
+
+## Technologies Used
+
+- Python 3.8+
+- SQLite (for data persistence)
+- CLI (Command Line Interface)

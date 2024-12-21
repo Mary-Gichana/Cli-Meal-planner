@@ -117,5 +117,7 @@ def main():
             manage_categories()
         elif choice == "2":
             manage_meals()
-        
+        elif choice == "3":
+            print("Exiting Meal Planner. Goodbye!")
+            sys.exit()
         

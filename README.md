@@ -56,9 +56,13 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
 
     ==== Meal Planner ====
 
-        1. Manage Categories - to manage meal categories.
-        2. Manage Meals - to manage meals.
-        3. Exit - to exit the program.
+        1. Manage Categories
+        2. Manage Meals
+        3. Exit
+
+    Main Menu
+
+    ==== Meal Planner ==== 1. Manage Categories - choose this if you want to manage meal categories add, delete,find meal category by id,view all meal categories. 2. Manage Meals - choose this if you want to manage meal categories add, delete,find meal by id,view all meals. 3. Exit - choose if you want to exit the program.
 
     If you select Manage Categories, the following input options are displayed:
 
@@ -72,11 +76,11 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
 
     Manage Meal Categories Menu
 
-    1. Add Category:Enter the name of the category to create a new meal category.
-    2. Delete Category:Enter the name of the category you want to delete from the list.
-    3. List Categories:View all existing meal categories along with their IDs.
-    4. Find Category by ID:Enter a specific ID to retrieve the details of the corresponding meal category.
-    5. Go Back:Return to the main menu.
+    1. Add Category:select this if you want to add a meal category, you will be prompted to Enter the name of the category.
+    2. Delete Category:select this if you want to delete a meal category, you will be prompted to Enter the name of the category you want to delete from the list.
+    3. List Categories:select this if you want to View all existing meal categories along with their IDs.
+    4. Find Category by ID:select this if you want to find a category by its id, you will be prompted to Enter a specific ID to retrieve the details of the corresponding meal category.
+    5. Go Back:select this if you want to Return to the main menu.
 
     If you select Manage Meals, the following options are displayed:
 
@@ -90,11 +94,11 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
 
     Manage Meals Menu
 
-    1. Add Meal:Enter the meal's name, date (in YYYY-MM-DD format), and category ID to add a new meal.
-    2. Delete Meal:Enter the name of the meal you want to remove from the list.
-    3. List Meals:View all existing meals, including their IDs, names, dates, and associated categories.
-    4. Find Meal by ID:Enter a specific ID to retrieve the details of the corresponding meal.
-    5. Go Back:Return to the main menu .
+    1. Add Meal:select this if you want to add a new meal, you will be prompted to Enter the meal's name, date (in YYYY-MM-DD format), and category ID.
+    2. Delete Meal:select this if you want to delete a meal, you will be prompted to Enter the name of the meal you want to remove from the list.
+    3. List Meals:select this if you want to View all existing meals, including their IDs, names, dates, and associated categories.
+    4. Find Meal by ID:select this if you want to find a meal by its id, you will be prompted to Enter a specific ID to retrieve the details of the corresponding meal.
+    5. Go Back:select this if you want to Return to the main menu .
 
     If you select Exit
 

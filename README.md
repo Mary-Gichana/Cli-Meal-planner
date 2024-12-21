@@ -25,7 +25,9 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
 
 1.  Clone this repository using:
 
+    ```
     git clone git@github.com:Mary-Gichana/Cli-Meal-planner.git
+    ```
 
 2.  Navigate to the project directory:
 

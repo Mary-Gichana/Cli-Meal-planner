@@ -67,6 +67,14 @@ class Meal:
                 cursor.execute('SELECT * FROM meals')
                 meals = cursor.fetchall()
                 return meals
+    @classmethod
+    def find_by_id(cls, meal_id):
+        
+            with sqlite3.connect(DATABASE_NAME) as conn:
+                cursor = conn.cursor()
+                cursor.execute('SELECT * FROM meals WHERE id = ?', (meal_id,))
+                meal = cursor.fetchone()
+                return meal
     
 
 

@@ -34,5 +34,12 @@ def manage_categories():
             name = input("Enter category name to delete: ").strip()
             MealCategory.delete_category(name)
             print("Category deleted.")
+        elif choice == "3":
+            categories = MealCategory.find_all()
+            if categories:
+                for category in categories:
+                    print(category)
+            else:
+                print("No categories found.")
         
         

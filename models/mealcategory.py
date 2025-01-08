@@ -28,6 +28,10 @@ class MealCategory:
         return f"MealCategory({self._id}, {self._name})"
     
     @classmethod
+    def from_db(cls, row):
+        return cls(name=row[1], id=row[0])
+    
+    @classmethod
     def add_category(cls, name):
         
             with sqlite3.connect(DATABASE_NAME) as conn:

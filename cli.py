@@ -38,7 +38,8 @@ def manage_categories():
             categories = MealCategory.find_all()
             if categories:
                 for category in categories:
-                    print(category)
+                    category_dict = {"id": category[0], "name": category[1]}
+                    print(category_dict)
             else:
                 print("No categories found.")
         elif choice == "4":

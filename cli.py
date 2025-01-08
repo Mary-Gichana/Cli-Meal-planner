@@ -25,11 +25,12 @@ def manage_categories():
 
         if choice == "1":
             name = input("Enter category name: ").strip()
-            if name:
-                MealCategory.add_category(name)
-                print("Category added.")
-            else:
-                print("Category name cannot be empty.")
+            try:
+                
+                category = MealCategory(1, name)  
+                print(f"Category '{category.name}' added successfully.")
+            except ValueError as e:
+                print(f"Error: {e}")
         elif choice == "2":
             name = input("Enter category name to delete: ").strip()
             MealCategory.delete_category(name)
@@ -67,7 +68,10 @@ def manage_meals():
         print("5. Go Back")
         choice = input("Enter choice: ")
         if choice == "1":
+           try:
             name = input("Enter meal name: ").strip()
+            if not isinstance(name, str) or not name:
+                    raise ValueError("Meal name must be a non-empty string.")
             date_str = input("Enter meal date (YYYY-MM-DD): ").strip()
             date = validate_date(date_str)
             if not date:
@@ -79,6 +83,11 @@ def manage_meals():
                 print("Meal added.")
             else:
                 print("Category not found. Add the category first.")
+
+           except ValueError as e:
+                print(f"Error: {e}")
+                continue
+        
         elif choice == "2":
             meal_id = input("Enter meal ID to delete: ").strip()
             if meal_id.isdigit():

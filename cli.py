@@ -47,7 +47,7 @@ def manage_categories():
             if category_id.isdigit():
                 category = MealCategory.find_by_id(int(category_id))
                 if category:
-                    print(category)
+                    print(f"Category: {category}")
                 else:
                     print("Category not found.")
             else:

@@ -88,8 +88,11 @@ def manage_meals():
         elif choice == "3":
             meals = Meal.find_all()
             if meals:
-                for meal in meals:
-                    print(meal)
+        
+               meals_list = [(meal[0], meal[1], meal[2], meal[3]) for meal in meals]
+
+               print(meals_list)
+        
             else:
                 print("No meals found.")
         elif choice == "4":

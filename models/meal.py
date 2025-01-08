@@ -41,6 +41,10 @@ class Meal:
             raise ValueError("Date must be in the format YYYY-MM-DD")
     def __repr__(self):
         return f"Meal({self._id}, {self._name}, {self._date}, {self.mealcategory_id})"
+    
+    @classmethod
+    def from_db(cls, row):
+        return cls(name=row[1], date=row[2], mealcategory_id=row[3], id=row[0])
     @classmethod
     def add_meal(cls, name, date, mealcategory_id):
         

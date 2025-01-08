@@ -100,7 +100,7 @@ def manage_meals():
             if meal_id.isdigit():
                 meal = Meal.find_by_id(int(meal_id))
                 if meal:
-                    print(meal)
+                    print(f"Meal: {meal}")
                 else:
                     print("Meal not found.")
             else:
